@@ -1,9 +1,5 @@
- $red: #E3170A;
- $dark: #011827;
- $gray: #B6BDB5;
- $blue: #36769D;
- $lighblue: #8ACFE5;
- $white: white;
+@use "./sections/lib.scss" as *;
+@use "./sections/header.scss";
 
 html {
     font-family: "Roboto", sans-serif;
@@ -12,54 +8,6 @@ html {
 body {
     padding: 0;
     margin: 0;
-}
-/*header and navigation */
-header{
-    display: flex;
-    flex-wrap: wrap;
-    background-color: $dark;
-    align-items: center;
-.header__container{
-    width: 100%;
-    display: flex;
-    align-items: center;
-}
-.header__logo {
-   width: 4rem;
-   height: 3rem;
-}
-.header__text{
-    font-size: 0.8rem;
-    color: $white;
-    width: 3.5rem;
-}
-.navigation{
-    width: 100%;
-    display: none;
-
-    ul{
-        display: flex;
-        color: white;
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-        justify-content: space-evenly;
-    }
-    li{
-        padding: 1rem;
-    
-    
-    }
-    a{
-        text-decoration: none;
-        color: $white;
-        font-weight: 700;
-        font-size: 0.85rem;
-    }
-    a:hover{
-        color: $lighblue;
-    }
-}
 }
 
 
