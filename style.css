@@ -1,8 +1,57 @@
 html {
-  padding: 0;
-  margin: 0;
   font-family: "Roboto", sans-serif;
   font-size: 28px;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+/*header and navigation */
+header {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #011827;
+  align-items: center;
+}
+header .header__container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+header .header__logo {
+  width: 4rem;
+  height: 3rem;
+}
+header .header__text {
+  font-size: 0.8rem;
+  color: white;
+  width: 3.5rem;
+}
+header .navigation {
+  width: 100%;
+  display: none;
+}
+header .navigation ul {
+  display: flex;
+  color: white;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  justify-content: space-evenly;
+}
+header .navigation li {
+  padding: 1rem;
+}
+header .navigation a {
+  text-decoration: none;
+  color: white;
+  font-weight: 700;
+  font-size: 0.85rem;
+}
+header .navigation a:hover {
+  color: #8ACFE5;
 }
 
 /*# sourceMappingURL=style.css.map */
