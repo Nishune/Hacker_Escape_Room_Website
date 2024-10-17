@@ -1,3 +1,5 @@
+/*Project Colors*/
+/*Project mixins*/
 header {
   display: flex;
   flex-wrap: wrap;
@@ -51,6 +53,35 @@ html {
 body {
   padding: 0;
   margin: 0;
+}
+
+.introduction .introduction__image {
+  width: 100%;
+}
+.introduction .introduction__buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+}
+.introduction .introduction__onsite {
+  background-color: #8ACFE5;
+  padding: 0.7rem 2.5rem;
+  font-size: 0.8rem;
+  font-weight: 700;
+  font-family: "Roboto", sans-serif;
+  border: none;
+  border-radius: 5px;
+}
+.introduction .introduction__online {
+  text-decoration: underline;
+  background-color: white;
+  border: none;
+  padding: 1rem;
+  color: #36769D;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 0.6rem;
 }
 
 /*# sourceMappingURL=style.css.map */

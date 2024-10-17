@@ -1,6 +1,8 @@
 @use "./sections/lib.scss" as *;
 @use "./sections/header.scss";
 
+
+
 html {
     font-family: "Roboto", sans-serif;
     font-size: 28px;
@@ -10,4 +12,23 @@ body {
     margin: 0;
 }
 
+.introduction{
+
+    .introduction__image{
+        width: 100%;
+        
+    }
+    .introduction__buttons{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 1rem;
+    }
+    .introduction__onsite{
+        @include bluebutton;
+    }
+    .introduction__online{
+        @include buttonLink;
+    }
+}
 
