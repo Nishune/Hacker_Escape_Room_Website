@@ -207,6 +207,57 @@ header .navigation a:hover {
   color: #8ACFE5;
 }
 
+.play .first__play__container {
+  padding: 0.8rem;
+}
+.play .play__firstImg {
+  width: 100%;
+}
+.play .play__friends__firstHeading {
+  font-size: 1.1rem;
+  margin: 0 0 1rem 0;
+}
+.play .play__friends__firstText {
+  font-size: 0.8rem;
+  margin: 0 0 1rem 0;
+}
+.play .play__friends__book {
+  background-color: #E3170A;
+  font-size: 0.85rem;
+  font-weight: 700;
+  font-family: "Roboto", sans-serif;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  padding: 0.65rem 1.5rem;
+  margin-bottom: 1.5rem;
+}
+.play .second__play__container {
+  padding: 0.8rem;
+}
+.play .play__secondImg {
+  width: 100%;
+}
+.play .play__friends__secondHeading {
+  font-size: 1.1rem;
+  margin: 0 0 1rem 0;
+}
+.play .play__friends__firstText {
+  font-size: 0.8rem;
+  margin: 0 0 1rem 0;
+}
+.play .play__friends__challenges {
+  background-color: #E3170A;
+  font-size: 0.85rem;
+  font-weight: 700;
+  font-family: "Roboto", sans-serif;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  padding: 0.65rem 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
 * {
   max-width: 100%;
   box-sizing: border-box;

@@ -36,3 +36,14 @@ $white: white;
     color: $white;
     padding: 0.4rem 1.2rem;
   }
+  @mixin bigRedButton{
+    background-color: $red;
+    font-size: 0.85rem;
+    font-weight: 700;
+    font-family: "Roboto", sans-serif;
+    border: none;
+    border-radius: 5px;
+    color: $white;
+    padding: 0.65rem 1.5rem;
+    margin-bottom: 1.5rem;
+  }

@@ -1,0 +1,39 @@
+@use "./lib.scss" as *;
+
+.play {
+    .first__play__container{
+      padding: 0.8rem;
+    }
+    .play__firstImg{
+      width: 100%;
+    }
+      .play__friends__firstHeading{
+        font-size: 1.1rem;
+        margin: 0 0 1rem 0;
+      }
+      .play__friends__firstText{
+        font-size: 0.8rem;
+        margin: 0 0 1rem 0;
+      }
+      .play__friends__book{
+        @include bigRedButton;
+      }
+      .second__play__container{
+        padding: 0.8rem;
+      }
+      .play__secondImg{
+        width: 100%;
+      }
+      .play__friends__secondHeading{
+        font-size: 1.1rem;
+        margin: 0 0 1rem 0;
+      }
+      .play__friends__firstText{
+        font-size: 0.8rem;
+        margin: 0 0 1rem 0;
+      }
+      .play__friends__challenges{
+        @include bigRedButton;
+      }
+    }
+    
