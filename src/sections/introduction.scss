@@ -12,7 +12,7 @@
         padding: 1rem;
     }
     .introduction__onsite{
-        @include bluebutton;
+        @include blueButton;
     }
     .introduction__online{
         @include buttonLink;

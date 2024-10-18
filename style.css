@@ -95,6 +95,11 @@ header .navigation a:hover {
   margin-top: 0.2rem;
 }
 
+* {
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
 html {
   font-family: "Roboto", sans-serif;
   font-size: 28px;
@@ -105,6 +110,10 @@ body {
   margin: 0;
 }
 
+.content {
+  display: flex;
+  flex-direction: column;
+}
 .content h1 {
   font-size: 1.1rem;
   text-align: center;
@@ -113,25 +122,104 @@ body {
 .content .content__room__container {
   display: flex;
   overflow-x: auto;
+  margin-left: 1rem;
+}
+.content .room__img {
+  width: 100%;
 }
 .content .room {
-  padding: 1.1rem;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.26);
+  margin: 0.7rem;
+  border-radius: 0.4rem;
+  width: 13rem;
 }
 .content .room__heading {
   font-size: 1rem;
   font-weight: 400;
   margin: 0;
+  padding-left: 0.5rem;
 }
 .content .room__stars {
   display: flex;
   align-items: center;
-  padding: 0.2rem;
+  padding: 0 0 0 0.5rem;
 }
 .content .room_participants {
   font-size: 0.5rem;
   margin: 0;
   padding: 0.2rem;
   text-align: center;
+}
+.content .room__info {
+  font-size: 0.6rem;
+  padding: 0.5rem 0.5rem 0 0.5rem;
+  margin: 0;
+}
+.content .room__button__container {
+  display: flex;
+  justify-content: flex-end;
+  padding: 0.5rem;
+}
+.content .room__button {
+  background-color: #E3170A;
+  font-size: 0.6rem;
+  font-weight: 700;
+  font-family: "Roboto", sans-serif;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  padding: 0.4rem 1.2rem;
+}
+.content .content__navigation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+}
+.content .content__navigation__button {
+  background-color: #8ACFE5;
+  padding: 0.7rem 2.5rem;
+  font-size: 0.8rem;
+  font-weight: 700;
+  font-family: "Roboto", sans-serif;
+  border: none;
+  border-radius: 5px;
+}
+.content .content__navigation__link {
+  text-decoration: underline;
+  background-color: white;
+  border: none;
+  padding: 1rem;
+  color: #36769D;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 0.6rem;
+}
+.content .content__story {
+  background-color: #011827;
+  padding: 2rem;
+}
+.content .story__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.content .story__container .story__text {
+  font-size: 1rem;
+  color: white;
+  font-weight: 400;
+  text-align: center;
+  margin: 1rem 0rem 2rem 0rem;
+}
+.content .story__container .story__button {
+  background-color: #011827;
+  border: 2px solid #8ACFE5;
+  padding: 0.7rem 2.5rem;
+  font-size: 0.8rem;
+  font-weight: 700;
+  font-family: "Roboto", sans-serif;
+  border-radius: 5px;
+  color: #8ACFE5;
 }
 
 /*# sourceMappingURL=style.css.map */

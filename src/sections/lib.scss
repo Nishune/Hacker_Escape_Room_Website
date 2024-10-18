@@ -7,7 +7,7 @@ $lighblue: #8ACFE5;
 $white: white;
 
 /*Project mixins*/
-@mixin bluebutton {
+@mixin blueButton {
     background-color: $lighblue;
     padding: 0.7rem 2.5rem;
     font-size: 0.8rem;
@@ -26,3 +26,13 @@ $white: white;
     font-weight: 700;
     font-size: 0.6rem;
 }
+@mixin redButton {
+    background-color: $red;
+    font-size: 0.6rem;
+    font-weight: 700;
+    font-family: "Roboto", sans-serif;
+    border: none;
+    border-radius: 5px;
+    color: $white;
+    padding: 0.4rem 1.2rem;
+  }
