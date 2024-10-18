@@ -1,5 +1,6 @@
 @use "./sections/lib.scss" as *;
 @use "./sections/header.scss";
+@use "./sections/introduction.scss";
 
 
 
@@ -11,45 +12,35 @@ body {
     padding: 0;
     margin: 0;
 }
+.content {
 
-.introduction{
-
-    .introduction__image{
-        width: 100%;
-        
-    }
-    .introduction__buttons{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding: 1rem;
-    }
-    .introduction__onsite{
-        @include bluebutton;
-    }
-    .introduction__online{
-        @include buttonLink;
-    }
-    .reviews{
-        display: grid;
-        grid-template-columns: auto 1fr;
-        grid-template-rows: auto auto;
-        padding: 1rem;
-        gap: 0.5rem;
-    }
-    .reviews__container{
-        display: flex;
-        flex-direction: column;
-    }
-    .reviews__text{
-        margin: 0;
-        font-size: 0.8rem;
-        font-style: italic;
-    }
-    .reviews__date{
-        margin: 0;
-        font-size: 0.6rem;
-        margin-top: 0.2rem;
-    }
+  h1{
+    font-size: 1.1rem;
+    text-align: center;
+    font-weight: 400;
+  }
+  .content__room__container{
+    display: flex;
+    overflow-x: auto;
+  }
+  .room{
+    padding: 1.1rem;
+  }
+  .room__heading{
+    font-size: 1rem;
+    font-weight: 400;
+    margin: 0;
+  }
+  .room__stars{
+    display: flex;
+    align-items: center;
+    padding: 0.2rem;
+  }
+  .room_participants{
+    font-size: 0.5rem;
+    margin: 0;
+    padding: 0.2rem;
+    text-align: center;
+    
+  }
 }
-
