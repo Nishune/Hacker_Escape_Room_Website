@@ -83,5 +83,26 @@ body {
   font-weight: 700;
   font-size: 0.6rem;
 }
+.introduction .reviews {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-template-rows: auto auto;
+  padding: 1rem;
+  gap: 0.5rem;
+}
+.introduction .reviews__container {
+  display: flex;
+  flex-direction: column;
+}
+.introduction .reviews__text {
+  margin: 0;
+  font-size: 0.8rem;
+  font-style: italic;
+}
+.introduction .reviews__date {
+  margin: 0;
+  font-size: 0.6rem;
+  margin-top: 0.2rem;
+}
 
 /*# sourceMappingURL=style.css.map */
