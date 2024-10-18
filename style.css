@@ -273,4 +273,64 @@ body {
   margin: 0;
 }
 
+footer {
+  margin-top: 1.1rem;
+  background-color: #011827;
+  color: white;
+}
+footer .footer__container {
+  padding: 2rem 1rem 2rem 1rem;
+}
+footer .company__heading {
+  font-size: 0.6rem;
+  font-weight: 700;
+  margin: 0;
+}
+footer .company__text {
+  font-size: 0.6rem;
+  margin-top: 0.25rem;
+}
+footer .contact__heading {
+  font-size: 0.6rem;
+  font-weight: 700;
+  margin: 0;
+}
+footer .contact__list {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 0.25rem;
+}
+footer .contact__list a {
+  color: white;
+  text-decoration: none;
+  font-size: 0.6rem;
+  display: block;
+}
+footer .contact__play {
+  list-style: none;
+  padding: 0;
+}
+footer a {
+  color: white;
+  text-decoration: none;
+  font-size: 0.6rem;
+  display: block;
+}
+footer .media__heading {
+  font-size: 0.6rem;
+  font-weight: 700;
+  margin: 0;
+}
+footer .media__list {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 0.25rem;
+}
+footer .media__list a {
+  color: white;
+  text-decoration: none;
+  font-size: 0.6rem;
+  display: block;
+}
+
 /*# sourceMappingURL=style.css.map */
