@@ -95,21 +95,6 @@ header .navigation a:hover {
   margin-top: 0.2rem;
 }
 
-* {
-  max-width: 100%;
-  box-sizing: border-box;
-}
-
-html {
-  font-family: "Roboto", sans-serif;
-  font-size: 28px;
-}
-
-body {
-  padding: 0;
-  margin: 0;
-}
-
 .content {
   display: flex;
   flex-direction: column;
@@ -220,6 +205,21 @@ body {
   font-family: "Roboto", sans-serif;
   border-radius: 5px;
   color: #8ACFE5;
+}
+
+* {
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Roboto", sans-serif;
+  font-size: 28px;
+}
+
+body {
+  padding: 0;
+  margin: 0;
 }
 
 /*# sourceMappingURL=style.css.map */
