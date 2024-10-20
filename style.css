@@ -1,5 +1,7 @@
 /*Project Colors*/
-/*Project mixins*/
+/*Screen size variables*/
+/*Project button mixins*/
+/*Project screen-size mixins*/
 header {
   display: flex;
   flex-wrap: wrap;
@@ -21,8 +23,13 @@ header .header__text {
   width: 3.5rem;
 }
 header .navigation {
-  width: 100%;
   display: none;
+  width: 100%;
+}
+@media screen and (min-width: 1200px) {
+  header .navigation {
+    display: block;
+  }
 }
 header .navigation ul {
   display: flex;

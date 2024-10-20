@@ -5,8 +5,10 @@ $gray: #B6BDB5;
 $blue: #36769D;
 $lighblue: #8ACFE5;
 $white: white;
+/*Screen size variables*/
+$large-screen-breakpoint: 1200px;
 
-/*Project mixins*/
+/*Project button mixins*/
 @mixin blueButton {
     background-color: $lighblue;
     padding: 0.7rem 2.5rem;
@@ -47,3 +49,9 @@ $white: white;
     padding: 0.65rem 1.5rem;
     margin-bottom: 1.5rem;
   }
+  /*Project screen-size mixins*/
+  @mixin breakpoint($min-size) {
+    @media screen and (min-width: $min-size) {
+        @content;
+    }
+}
