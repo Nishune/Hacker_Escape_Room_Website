@@ -11,7 +11,18 @@
     .content__room__container{
       display: flex;
       overflow-x: auto;
-      margin-left: 1rem;
+      margin: 0rem 0rem 0.2rem 1rem;
+      &::-webkit-scrollbar{
+        display: none;
+      }
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+      @include breakpoint($large-screen-breakpoint){
+        overflow-x: hidden;
+        margin: 0;
+        justify-content: space-evenly;
+        padding-bottom: 1rem;
+      }
     }
     .room__img{
       width: 100%;
@@ -21,6 +32,9 @@
       margin: 0.7rem;
       border-radius: 0.4rem;
       width: 13rem;
+      @include breakpoint($large-screen-breakpoint){
+        margin: 0;
+      }
     }
     .room__heading{
       font-size: 1rem;
@@ -38,6 +52,12 @@
       margin: 0;
       padding: 0.2rem;
       text-align: center;
+      @include breakpoint($large-screen-breakpoint){
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+        margin-right: 0.2rem;
+      }
     }
     .room__info{
       font-size: 0.6rem;
@@ -57,12 +77,25 @@
       flex-direction: column;
       align-items: center;
       padding: 1rem;
+      @include breakpoint($large-screen-breakpoint){
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+        padding-bottom: 3.1rem;
+      }
     }
     .content__navigation__button{
-      @include blueButton
+      @include blueButton;
     }
     .content__navigation__link{
-      @include buttonLink
+      @include buttonLink;
+      @include breakpoint($large-screen-breakpoint){
+        @include bigRedButtonDesktop;
+        order: -1;
+
+      }
     }
     .content__story{
       background-color: $dark;

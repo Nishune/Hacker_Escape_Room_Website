@@ -185,7 +185,20 @@ header .navigation a:hover {
 .content .content__room__container {
   display: flex;
   overflow-x: auto;
-  margin-left: 1rem;
+  margin: 0rem 0rem 0.2rem 1rem;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.content .content__room__container::-webkit-scrollbar {
+  display: none;
+}
+@media screen and (min-width: 1200px) {
+  .content .content__room__container {
+    overflow-x: hidden;
+    margin: 0;
+    justify-content: space-evenly;
+    padding-bottom: 1rem;
+  }
 }
 .content .room__img {
   width: 100%;
@@ -195,6 +208,11 @@ header .navigation a:hover {
   margin: 0.7rem;
   border-radius: 0.4rem;
   width: 13rem;
+}
+@media screen and (min-width: 1200px) {
+  .content .room {
+    margin: 0;
+  }
 }
 .content .room__heading {
   font-size: 1rem;
@@ -212,6 +230,14 @@ header .navigation a:hover {
   margin: 0;
   padding: 0.2rem;
   text-align: center;
+}
+@media screen and (min-width: 1200px) {
+  .content .room_participants {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 0.2rem;
+  }
 }
 .content .room__info {
   font-size: 0.6rem;
@@ -239,6 +265,16 @@ header .navigation a:hover {
   align-items: center;
   padding: 1rem;
 }
+@media screen and (min-width: 1200px) {
+  .content .content__navigation {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding-bottom: 3.1rem;
+  }
+}
 .content .content__navigation__button {
   background-color: #8ACFE5;
   padding: 0.7rem 2.15rem;
@@ -257,6 +293,20 @@ header .navigation a:hover {
   font-family: "Roboto", sans-serif;
   font-weight: 700;
   font-size: 0.6rem;
+}
+@media screen and (min-width: 1200px) {
+  .content .content__navigation__link {
+    background-color: #E3170A;
+    color: white;
+    padding: 0.7rem 2.32rem;
+    font-size: 0.8rem;
+    font-weight: 700;
+    font-family: "Roboto", sans-serif;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    order: -1;
+  }
 }
 .content .content__story {
   background-color: #011827;
