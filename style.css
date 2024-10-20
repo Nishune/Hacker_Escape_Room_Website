@@ -81,12 +81,13 @@ header .navigation a:hover {
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    gap: 1rem;
+    gap: 0.75rem;
+    transform: translateY(-2.2rem);
   }
 }
 .introduction .introduction__onsite {
   background-color: #8ACFE5;
-  padding: 0.7rem 2.5rem;
+  padding: 0.7rem 2.15rem;
   font-size: 0.8rem;
   font-weight: 700;
   font-family: "Roboto", sans-serif;
@@ -107,7 +108,7 @@ header .navigation a:hover {
   .introduction .introduction__online {
     background-color: #E3170A;
     color: white;
-    padding: 0.7rem 2.5rem;
+    padding: 0.7rem 2.32rem;
     font-size: 0.8rem;
     font-weight: 700;
     font-family: "Roboto", sans-serif;
@@ -207,7 +208,7 @@ header .navigation a:hover {
 }
 .content .content__navigation__button {
   background-color: #8ACFE5;
-  padding: 0.7rem 2.5rem;
+  padding: 0.7rem 2.15rem;
   font-size: 0.8rem;
   font-weight: 700;
   font-family: "Roboto", sans-serif;

@@ -11,7 +11,7 @@ $large-screen-breakpoint: 1200px;
 /*Project button mixins*/
 @mixin blueButton {
     background-color: $lighblue;
-    padding: 0.7rem 2.5rem;
+    padding: 0.7rem 2.15rem;
     font-size: 0.8rem;
     font-weight: 700;
     font-family: "Roboto", sans-serif;
@@ -52,7 +52,7 @@ $large-screen-breakpoint: 1200px;
   @mixin bigRedButtonDesktop{
     background-color: $red;
     color: $white;
-    padding: 0.7rem 2.5rem;
+    padding: 0.7rem 2.32rem;
     font-size: 0.8rem;
     font-weight: 700;
     font-family: "Roboto", sans-serif;
