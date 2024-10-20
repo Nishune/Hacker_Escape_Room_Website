@@ -119,25 +119,48 @@ header .navigation a:hover {
   }
 }
 .introduction .reviews {
+  padding: 1rem;
+}
+.introduction .reviews .second__review {
+  display: none;
+}
+.introduction .review {
   display: grid;
   grid-template-columns: auto 1fr;
   grid-template-rows: auto auto;
-  padding: 1rem;
   gap: 0.5rem;
+  flex: 1;
 }
-.introduction .reviews__container {
+.introduction .review .review__user {
+  grid-row: 1/1;
+}
+.introduction .review .review__content {
   display: flex;
   flex-direction: column;
 }
-.introduction .reviews__text {
+.introduction .review .review__text {
   margin: 0;
   font-size: 0.8rem;
   font-style: italic;
 }
-.introduction .reviews__date {
+.introduction .review .review__date {
   margin: 0;
   font-size: 0.6rem;
   margin-top: 0.2rem;
+}
+@media screen and (min-width: 1200px) {
+  .introduction .reviews {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  .introduction .reviews__container {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0rem 3rem;
+  }
+  .introduction .review.second__review {
+    display: grid;
+  }
 }
 
 .content {
