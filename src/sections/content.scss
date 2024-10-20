@@ -99,29 +99,28 @@
     }
     .content__story{
       background-color: $dark;
-      padding: 2rem;
     }
     .story__container{
       display: flex;
       flex-direction: column;
       align-items: center;
+      padding: 2rem 1rem 3rem 1rem;
+      @include breakpoint($large-screen-breakpoint){
+        padding: 3rem 1rem 5rem 1rem;
+      }
     .story__text{
       font-size: 1rem;
       color: $white;
       font-weight: 400;
       text-align: center;
-      margin: 1rem 0rem 2rem 0rem
+      margin: 1rem 0rem 2rem 0rem;
+      @include breakpoint($large-screen-breakpoint){
+      width: 60%;
+      }
       
     }
     .story__button{
-      background-color: $dark;
-      border: 2px solid $lighblue;
-      padding: 0.7rem 2.5rem;
-      font-size: 0.8rem;
-      font-weight: 700;
-      font-family: "Roboto", sans-serif;
-      border-radius: 5px;
-      color: $lighblue;
+      @include darkButton;
       
     }
   }

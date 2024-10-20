@@ -60,6 +60,16 @@ $large-screen-breakpoint: 1200px;
     border-radius: 5px;
     text-decoration: none;
   }
+  @mixin darkButton {
+    background-color: $dark;
+    border: 2px solid $lighblue;
+    padding: 0.7rem 2.22rem;
+    font-size: 0.8rem;
+    font-weight: 700;
+    font-family: "Roboto", sans-serif;
+    border-radius: 5px;
+    color: $lighblue;
+  }
   /*Project screen-size mixins*/
   @mixin breakpoint($min-size) {
     @media screen and (min-width: $min-size) {
