@@ -52,14 +52,37 @@ header .navigation a:hover {
   color: #8ACFE5;
 }
 
-.introduction .introduction__image {
+.introduction .introduction__image__mobile {
   width: 100%;
+}
+@media screen and (min-width: 1200px) {
+  .introduction .introduction__image__mobile {
+    display: none;
+  }
+}
+.introduction .introduction__image__desktop {
+  display: none;
+}
+@media screen and (min-width: 1200px) {
+  .introduction .introduction__image__desktop {
+    display: block;
+    width: 100%;
+  }
 }
 .introduction .introduction__buttons {
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 1rem;
+}
+@media screen and (min-width: 1200px) {
+  .introduction .introduction__buttons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+  }
 }
 .introduction .introduction__onsite {
   background-color: #8ACFE5;
@@ -79,6 +102,20 @@ header .navigation a:hover {
   font-family: "Roboto", sans-serif;
   font-weight: 700;
   font-size: 0.6rem;
+}
+@media screen and (min-width: 1200px) {
+  .introduction .introduction__online {
+    background-color: #E3170A;
+    color: white;
+    padding: 0.7rem 2.5rem;
+    font-size: 0.8rem;
+    font-weight: 700;
+    font-family: "Roboto", sans-serif;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    order: -1;
+  }
 }
 .introduction .reviews {
   display: grid;
@@ -265,21 +302,6 @@ header .navigation a:hover {
   margin-bottom: 1.5rem;
 }
 
-* {
-  max-width: 100%;
-  box-sizing: border-box;
-}
-
-html {
-  font-family: "Roboto", sans-serif;
-  font-size: 28px;
-}
-
-body {
-  padding: 0;
-  margin: 0;
-}
-
 footer {
   margin-top: 1.1rem;
   background-color: #011827;
@@ -338,6 +360,21 @@ footer .media__list a {
   text-decoration: none;
   font-size: 0.6rem;
   display: block;
+}
+
+* {
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Roboto", sans-serif;
+  font-size: 28px;
+}
+
+body {
+  padding: 0;
+  margin: 0;
 }
 
 /*# sourceMappingURL=style.css.map */

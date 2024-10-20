@@ -49,6 +49,17 @@ $large-screen-breakpoint: 1200px;
     padding: 0.65rem 1.5rem;
     margin-bottom: 1.5rem;
   }
+  @mixin bigRedButtonDesktop{
+    background-color: $red;
+    color: $white;
+    padding: 0.7rem 2.5rem;
+    font-size: 0.8rem;
+    font-weight: 700;
+    font-family: "Roboto", sans-serif;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+  }
   /*Project screen-size mixins*/
   @mixin breakpoint($min-size) {
     @media screen and (min-width: $min-size) {

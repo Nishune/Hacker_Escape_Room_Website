@@ -1,21 +1,41 @@
 @use "./lib.scss" as *;
 .introduction{
 
-    .introduction__image{
+    .introduction__image__mobile{
         width: 100%;
-        
+        @include breakpoint($large-screen-breakpoint){
+            display: none;
+        }
+    }
+    .introduction__image__desktop {
+        display: none;
+        @include breakpoint($large-screen-breakpoint){
+            display: block;
+            width: 100%;
+        }
     }
     .introduction__buttons{
         display: flex;
         flex-direction: column;
         align-items: center;
         padding: 1rem;
+        @include breakpoint($large-screen-breakpoint) {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            gap: 1rem;
+        }
     }
     .introduction__onsite{
         @include blueButton;
     }
     .introduction__online{
         @include buttonLink;
+        @include breakpoint($large-screen-breakpoint){
+            @include bigRedButtonDesktop;
+            order: -1;
+        }
     }
     .reviews{
         display: grid;
