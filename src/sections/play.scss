@@ -16,6 +16,7 @@
         grid-column: 2 / 2;
         grid-row: 1 / 1;
         display: block; 
+        margin: auto;
       }
     }
     .play__firstImg, .play__secondImg{
@@ -29,8 +30,6 @@
         @include breakpoint($large-screen-breakpoint){
           width: 14rem;
           margin-top: 1rem;
-          margin-left: auto;
-          margin-right: auto;
         }
       }
       .play__friends__firstText, .play__friends__secondText{
@@ -44,15 +43,13 @@
       }
       .play__friends__book, .play__friends__challenges{
         @include bigRedButton;
-        @include breakpoint($large-screen-breakpoint){
-          margin-left: 3rem;
-        }
       }
       .second__play__container{
         padding: 0.8rem;
         @include breakpoint($large-screen-breakpoint){
           grid-column: 1 / 1;
           grid-row: 2 / 2;
+          margin: auto;
         }
       }
     }

@@ -130,30 +130,37 @@ header .navigation a:hover {
 }
 .introduction .reviews {
   padding: 1rem;
+  max-width: 20rem;
+  margin: 0 auto;
 }
-.introduction .reviews .second__review {
+.introduction .reviews .review__second {
   display: none;
 }
-.introduction .review {
+.introduction .review__first,
+.introduction .review__second {
   display: grid;
   grid-template-columns: auto 1fr;
   grid-template-rows: auto auto;
   gap: 0.5rem;
   flex: 1;
 }
-.introduction .review .review__user {
+.introduction .review__first .review__user,
+.introduction .review__second .review__user {
   grid-row: 1/1;
 }
-.introduction .review .review__content {
+.introduction .review__first .review__content,
+.introduction .review__second .review__content {
   display: flex;
   flex-direction: column;
 }
-.introduction .review .review__text {
+.introduction .review__first .review__text,
+.introduction .review__second .review__text {
   margin: 0;
   font-size: 0.8rem;
   font-style: italic;
 }
-.introduction .review .review__date {
+.introduction .review__first .review__date,
+.introduction .review__second .review__date {
   margin: 0;
   font-size: 0.6rem;
   margin-top: 0.2rem;
@@ -163,13 +170,13 @@ header .navigation a:hover {
     max-width: 1200px;
     margin: 0 auto;
   }
+  .introduction .reviews .review__second {
+    display: grid;
+  }
   .introduction .reviews__container {
     display: flex;
     flex-wrap: wrap;
     padding: 0rem 3rem;
-  }
-  .introduction .review.second__review {
-    display: grid;
   }
 }
 
@@ -400,8 +407,9 @@ header .navigation a:hover {
   border: none;
   border-radius: 5px;
   color: white;
-  padding: 0.65rem 1.9rem;
-  margin-bottom: 1.5rem;
+  width: 10.7rem;
+  padding: 0.65rem 0.65rem;
+  margin-bottom: 1.2rem;
 }
 .play .second__play__container {
   padding: 0.8rem;
@@ -418,6 +426,7 @@ header .navigation a:hover {
   margin-top: 1.1rem;
   background-color: #011827;
   color: white;
+  height: 20rem;
   padding: 2rem 1rem 2rem 1rem;
 }
 @media screen and (min-width: 1200px) {
@@ -428,53 +437,77 @@ header .navigation a:hover {
     height: 16rem;
   }
 }
-.footer .company__heading {
+.footer .company {
+  margin-top: 0.3rem;
+}
+@media screen and (min-width: 1200px) {
+  .footer .company {
+    margin: 0;
+  }
+}
+.footer .company .company__heading {
   font-size: 0.6rem;
   font-weight: 700;
   margin: 0;
 }
-.footer .company__text {
+.footer .company .company__text {
   font-size: 0.6rem;
   margin-top: 0.25rem;
   width: 14rem;
 }
-.footer .contact__heading {
+.footer .contact {
+  margin-top: 1.5rem;
+}
+@media screen and (min-width: 1200px) {
+  .footer .contact {
+    margin: 0;
+  }
+}
+.footer .contact .contact__heading {
   font-size: 0.6rem;
   font-weight: 700;
   margin: 0;
 }
-.footer .contact__list {
+.footer .contact .contact__list {
   list-style-type: none;
   padding: 0;
   margin-top: 0.25rem;
 }
-.footer .contact__list a {
+.footer .contact .contact__list a {
   color: white;
   text-decoration: none;
   font-size: 0.6rem;
   display: block;
 }
-.footer .contact__play {
+.footer .contact .contact__play {
   list-style: none;
   padding: 0;
 }
-.footer a {
+.footer .contact a {
   color: white;
   text-decoration: none;
   font-size: 0.6rem;
   display: block;
 }
-.footer .media__heading {
+.footer .media {
+  margin-top: 1.5rem;
+}
+@media screen and (min-width: 1200px) {
+  .footer .media {
+    margin: 0;
+  }
+}
+.footer .media .media__heading {
   font-size: 0.6rem;
   font-weight: 700;
   margin: 0;
 }
-.footer .media__list {
+.footer .media .media__list {
   list-style-type: none;
   padding: 0;
   margin-top: 0.25rem;
 }
-.footer .media__list a {
+.footer .media .media__list a {
   color: white;
   text-decoration: none;
   font-size: 0.6rem;

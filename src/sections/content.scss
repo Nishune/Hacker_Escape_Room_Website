@@ -19,9 +19,12 @@
       scrollbar-width: none;
       @include breakpoint($large-screen-breakpoint){
         overflow-x: hidden;
-        margin: 0;
+        margin: 0 auto;
         justify-content: space-evenly;
         padding-bottom: 1rem;
+        max-width: 1200px;
+        gap: 1rem;
+        
       }
     }
     .room__img{

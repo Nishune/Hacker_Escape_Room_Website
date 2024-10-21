@@ -5,6 +5,7 @@
     margin-top: 1.1rem;
     background-color: $dark;
     color: $white;
+    height: 20rem;
     padding: 2rem 1rem 2rem 1rem;
     @include breakpoint($large-screen-breakpoint){
       display: grid;
@@ -12,7 +13,11 @@
       padding: 4rem;
       height: 16rem;
     }
-    
+    .company{
+      margin-top: 0.3rem;
+      @include breakpoint($large-screen-breakpoint){
+        margin: 0;
+      }
     .company__heading{
       font-size: 0.6rem;
       font-weight: 700;
@@ -21,11 +26,16 @@
     .company__text{
       font-size: 0.6rem;
       margin-top: 0.25rem;
-      @include breakpoint($large-screen-breakpoint){
-        width: 14rem;
-      }
+      width: 14rem;
       
     }
+    }
+  .contact{
+    margin-top: 1.5rem;
+    @include breakpoint($large-screen-breakpoint){
+      margin: 0;
+    }
+  
     .contact__heading{
       font-size: 0.6rem;
       font-weight: 700;
@@ -53,6 +63,12 @@
     font-size: 0.6rem;
     display: block;
   }
+  }
+  .media{
+    margin-top: 1.5rem;
+    @include breakpoint($large-screen-breakpoint){
+      margin: 0;
+    }
   .media__heading{
     font-size: 0.6rem;
     font-weight: 700;
@@ -70,3 +86,4 @@
     }
   }
   }
+}
