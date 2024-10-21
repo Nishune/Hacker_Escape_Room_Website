@@ -4,8 +4,9 @@
   .play__container{
     @include breakpoint($large-screen-breakpoint){
       display: grid;
-      grid-template-columns: repeat(2, 640px);
-      grid-template-rows: repeat(2, 460px);
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+      margin-bottom: 6.6rem;
       
     }
   }
@@ -14,23 +15,38 @@
       @include breakpoint($large-screen-breakpoint){
         grid-column: 2 / 2;
         grid-row: 1 / 1;
+        display: block; 
       }
     }
-    .play__firstImg{
+    .play__firstImg, .play__secondImg{
       width: 100%;
       height: 100%;
       object-fit: cover;
     }
-      .play__friends__firstHeading{
+      .play__friends__firstHeading, .play__friends__secondHeading{
         font-size: 1.1rem;
         margin: 0 0 1rem 0;
+        @include breakpoint($large-screen-breakpoint){
+          width: 14rem;
+          margin-top: 1rem;
+          margin-left: auto;
+          margin-right: auto;
+        }
       }
-      .play__friends__firstText{
+      .play__friends__firstText, .play__friends__secondText{
         font-size: 0.8rem;
         margin: 0 0 1rem 0;
+        @include breakpoint($large-screen-breakpoint){
+        width: 14rem;
+        margin-left: auto;
+        margin-right: auto;
+        }
       }
-      .play__friends__book{
+      .play__friends__book, .play__friends__challenges{
         @include bigRedButton;
+        @include breakpoint($large-screen-breakpoint){
+          margin-left: 3rem;
+        }
       }
       .second__play__container{
         padding: 0.8rem;
@@ -38,22 +54,6 @@
           grid-column: 1 / 1;
           grid-row: 2 / 2;
         }
-      }
-      .play__secondImg{
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-      }
-      .play__friends__secondHeading{
-        font-size: 1.1rem;
-        margin: 0 0 1rem 0;
-      }
-      .play__friends__firstText{
-        font-size: 0.8rem;
-        margin: 0 0 1rem 0;
-      }
-      .play__friends__challenges{
-        @include bigRedButton;
       }
     }
     
