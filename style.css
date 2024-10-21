@@ -195,9 +195,11 @@ header .navigation a:hover {
 @media screen and (min-width: 1200px) {
   .content .content__room__container {
     overflow-x: hidden;
-    margin: 0;
+    margin: 0 auto;
     justify-content: space-evenly;
     padding-bottom: 1rem;
+    max-width: 1200px;
+    gap: 1rem;
   }
 }
 .content .room__img {
@@ -361,6 +363,7 @@ header .navigation a:hover {
     grid-column: 2/2;
     grid-row: 1/1;
     display: block;
+    margin: auto;
   }
 }
 .play .play__firstImg, .play .play__secondImg {
@@ -376,8 +379,6 @@ header .navigation a:hover {
   .play .play__friends__firstHeading, .play .play__friends__secondHeading {
     width: 14rem;
     margin-top: 1rem;
-    margin-left: auto;
-    margin-right: auto;
   }
 }
 .play .play__friends__firstText, .play .play__friends__secondText {
@@ -402,11 +403,6 @@ header .navigation a:hover {
   padding: 0.65rem 1.9rem;
   margin-bottom: 1.5rem;
 }
-@media screen and (min-width: 1200px) {
-  .play .play__friends__book, .play .play__friends__challenges {
-    margin-left: 3rem;
-  }
-}
 .play .second__play__container {
   padding: 0.8rem;
 }
@@ -414,6 +410,7 @@ header .navigation a:hover {
   .play .second__play__container {
     grid-column: 1/1;
     grid-row: 2/2;
+    margin: auto;
   }
 }
 
@@ -439,11 +436,7 @@ header .navigation a:hover {
 .footer .company__text {
   font-size: 0.6rem;
   margin-top: 0.25rem;
-}
-@media screen and (min-width: 1200px) {
-  .footer .company__text {
-    width: 14rem;
-  }
+  width: 14rem;
 }
 .footer .contact__heading {
   font-size: 0.6rem;
