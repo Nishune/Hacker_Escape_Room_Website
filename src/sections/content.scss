@@ -117,7 +117,7 @@
     align-items: center;
     padding: 1.6rem 1rem 3rem 1rem;
     @include breakpoint($large-screen-breakpoint) {
-      padding: 4.2rem 1rem 7rem 1rem;
+      padding: 3.5rem 1rem 5rem 1rem;
     }
     .story__text {
       font-size: 1rem;
@@ -126,11 +126,13 @@
       text-align: center;
       padding: 0.8rem 0.5rem;
       @include breakpoint($large-screen-breakpoint) {
-        width: 21rem;
+        width: 22rem;
+        margin: 0rem 0rem 0.5rem 0rem;
       }
     }
     .story__button {
       @include darkButton;
+      
     }
   }
 }

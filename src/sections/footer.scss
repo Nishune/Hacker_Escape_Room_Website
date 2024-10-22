@@ -9,13 +9,13 @@
   @include breakpoint($large-screen-breakpoint) {
     display: grid;
     grid-template-columns: 60% 20% 20%;
-    padding: 4rem;
-    height: 16rem;
+    padding: 3rem;
+    height: 16.6rem;
   }
   .company {
     margin-top: 0.3rem;
     @include breakpoint($large-screen-breakpoint) {
-      margin: 0;
+      margin: 2.3rem 0rem 0rem 1rem;
     }
     .company__heading {
       font-size: 0.6rem;
@@ -25,13 +25,13 @@
     .company__text {
       font-size: 0.6rem;
       margin-top: 0.25rem;
-      width: 14rem;
+      width: 14.5rem;
     }
   }
   .contact {
     margin-top: 1.5rem;
     @include breakpoint($large-screen-breakpoint) {
-      margin: 0;
+      margin-top: 2.3rem;
     }
 
     .contact__heading {
@@ -64,7 +64,7 @@
   .media {
     margin-top: 1.5rem;
     @include breakpoint($large-screen-breakpoint) {
-      margin: 0;
+      margin-top: 2.3rem;
     }
     .media__heading {
       font-size: 0.6rem;
