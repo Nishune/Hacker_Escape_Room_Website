@@ -74,6 +74,9 @@
       margin: 0;
       font-size: 0.6rem;
       margin-top: 0.2rem;
+      @include breakpoint($large-screen-breakpoint){
+        width: 70%;
+      }
     }
   }
 

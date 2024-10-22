@@ -8,13 +8,19 @@
     text-align: center;
     font-weight: 400;
     margin: 2rem 0rem 0.5rem 0rem;
+    @include breakpoint($large-screen-breakpoint){
+      font-size: 1.3rem;
+      margin: 2rem 0rem 3rem 0rem;
+    }
   }
 
   .content__room__container {
     display: flex;
     overflow-x: auto;
     gap: 1.4rem;
-    padding: 1rem 2rem;
+    padding: 1rem;
+    margin-left: 0.9rem;
+    
     &::-webkit-scrollbar {
       display: none;
     }
@@ -24,9 +30,8 @@
       overflow-x: hidden;
       margin: 0 auto;
       justify-content: space-evenly;
-      padding-bottom: 1rem;
-      max-width: 1200px;
-      gap: 0.5rem;
+      max-width: 1280px;
+      
     }
   }
   .room__img {
@@ -49,7 +54,8 @@
   .room__stars {
     display: flex;
     align-items: center;
-    padding: 0 0 0 0.5rem;
+    padding: 0 0 0 0.6rem;
+    gap: 0.3rem;
   }
   .room_participants {
     font-size: 0.5rem;
@@ -89,6 +95,7 @@
       align-items: center;
       gap: 1rem;
       padding-bottom: 3.1rem;
+      margin: 1.4rem 0rem 0rem 0rem;
     }
   }
   .content__navigation__button {
