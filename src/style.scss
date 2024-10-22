@@ -12,10 +12,12 @@
 html {
     font-family: "Roboto", sans-serif;
     font-size: 28px;
+    background-color: $dark;
 }
 body {
     padding: 0;
     margin: 0;
     max-width: 1500px;
     margin: auto;
+    background-color: $white;
 }

@@ -522,6 +522,7 @@ header .navigation a:hover {
 html {
   font-family: "Roboto", sans-serif;
   font-size: 28px;
+  background-color: #011827;
 }
 
 body {
@@ -529,6 +530,7 @@ body {
   margin: 0;
   max-width: 1500px;
   margin: auto;
+  background-color: white;
 }
 
 /*# sourceMappingURL=style.css.map */
