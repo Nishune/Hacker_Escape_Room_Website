@@ -1,79 +1,79 @@
 /*Project Colors*/
-$red: #E3170A;
+$red: #e3170a;
 $dark: #011827;
-$gray: #B6BDB5;
-$blue: #36769D;
-$lighblue: #8ACFE5;
+$gray: #b6bdb5;
+$blue: #36769d;
+$lighblue: #8acfe5;
 $white: white;
 /*Screen size variables*/
 $large-screen-breakpoint: 1200px;
 
 /*Project button mixins*/
 @mixin blueButton {
-    background-color: $lighblue;
-    padding: 0.7rem 2.15rem;
-    font-size: 0.8rem;
-    font-weight: 700;
-    font-family: "Roboto", sans-serif;
-    border: none;
-    border-radius: 5px;
+  background-color: $lighblue;
+  padding: 0.7rem 2.15rem;
+  font-size: 0.8rem;
+  font-weight: 700;
+  font-family: "Roboto", sans-serif;
+  border: none;
+  border-radius: 5px;
 }
 @mixin buttonLink {
-    text-decoration: underline;
-    background-color: white;
-    border: none;
-    padding: 1rem;
-    color: $blue;
-    font-family: "Roboto", sans-serif;
-    font-weight: 700;
-    font-size: 0.6rem;
+  text-decoration: underline;
+  background-color: white;
+  border: none;
+  padding: 1rem;
+  color: $blue;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 0.6rem;
 }
 @mixin redButton {
-    background-color: $red;
-    font-size: 0.6rem;
-    font-weight: 700;
-    font-family: "Roboto", sans-serif;
-    border: none;
-    border-radius: 5px;
-    color: $white;
-    padding: 0.4rem 1.2rem;
+  background-color: $red;
+  font-size: 0.6rem;
+  font-weight: 700;
+  font-family: "Roboto", sans-serif;
+  border: none;
+  border-radius: 5px;
+  color: $white;
+  padding: 0.4rem 1.2rem;
+}
+@mixin bigRedButton {
+  background-color: $red;
+  font-size: 0.85rem;
+  font-weight: 700;
+  font-family: "Roboto", sans-serif;
+  border: none;
+  border-radius: 5px;
+  color: $white;
+  width: 10.7rem;
+  padding: 0.65rem 0.65rem;
+  margin-bottom: 1.2rem;
+}
+@mixin bigRedButtonDesktop {
+  background-color: $red;
+  color: $white;
+  padding: 0.7rem 2.32rem;
+  font-size: 0.8rem;
+  font-weight: 700;
+  font-family: "Roboto", sans-serif;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+}
+@mixin darkButton {
+  background-color: $dark;
+  border: 2px solid $lighblue;
+  padding: 0.7rem 2.22rem;
+  font-size: 0.8rem;
+  font-weight: 700;
+  font-family: "Roboto", sans-serif;
+  border-radius: 5px;
+  color: $lighblue;
+}
+/*Project screen-size mixins*/
+@mixin breakpoint($min-size) {
+  @media screen and (min-width: $min-size) {
+    @content;
   }
-  @mixin bigRedButton{
-    background-color: $red;
-    font-size: 0.85rem;
-    font-weight: 700;
-    font-family: "Roboto", sans-serif;
-    border: none;
-    border-radius: 5px;
-    color: $white;
-    width: 10.7rem;
-    padding: 0.65rem 0.65rem; 
-    margin-bottom: 1.2rem;
-  }
-  @mixin bigRedButtonDesktop{
-    background-color: $red;
-    color: $white;
-    padding: 0.7rem 2.32rem;
-    font-size: 0.8rem;
-    font-weight: 700;
-    font-family: "Roboto", sans-serif;
-    border: none;
-    border-radius: 5px;
-    text-decoration: none;
-  }
-  @mixin darkButton {
-    background-color: $dark;
-    border: 2px solid $lighblue;
-    padding: 0.7rem 2.22rem;
-    font-size: 0.8rem;
-    font-weight: 700;
-    font-family: "Roboto", sans-serif;
-    border-radius: 5px;
-    color: $lighblue;
-  }
-  /*Project screen-size mixins*/
-  @mixin breakpoint($min-size) {
-    @media screen and (min-width: $min-size) {
-        @content;
-    }
 }

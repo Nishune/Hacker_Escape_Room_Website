@@ -1,96 +1,96 @@
 @use "./lib.scss" as *;
-.introduction{
-
-    .introduction__image__mobile{
-        width: 100%;
-        @include breakpoint($large-screen-breakpoint){
-            display: none;
-        }
-    }
-    .introduction__image__desktop {
-        display: none;
-        @include breakpoint($large-screen-breakpoint){
-            display: block;
-            width: 100%;
-        }
-    }
-    .introduction__buttons{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding: 1rem;
-        @include breakpoint($large-screen-breakpoint) {
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            justify-content: center;
-            gap: 0.75rem;
-            transform: translateY(-2.2rem);
-        }
-    }
-    .introduction__onsite{
-        @include blueButton;
-    }
-    .introduction__online{
-        @include buttonLink;
-        @include breakpoint($large-screen-breakpoint){
-            @include bigRedButtonDesktop;
-            order: -1;
-        }
-    }
-    .reviews {
-      padding: 1rem;
-      max-width: 20rem;
-      margin: 0 auto;
-    
-      .review__second {
-        display: none;
-      }
-    }
-    
-    .review__first,
-    .review__second {
-      display: grid;
-      grid-template-columns: auto 1fr;
-      grid-template-rows: auto auto;
-      gap: 0.5rem;
-      flex: 1;
-    
-      .review__user {
-        grid-row: 1 / 1;
-      }
-    
-      .review__content {
-        display: flex;
-        flex-direction: column;
-      }
-    
-      .review__text {
-        margin: 0;
-        font-size: 0.8rem;
-        font-style: italic;
-      }
-    
-      .review__date {
-        margin: 0;
-        font-size: 0.6rem;
-        margin-top: 0.2rem;
-      }
-    }
-    
+.introduction {
+  .introduction__image__mobile {
+    width: 100%;
     @include breakpoint($large-screen-breakpoint) {
-      .reviews {
-        max-width: 1200px;
-        margin: 0 auto;
-    
-        .review__second {
-          display: grid;
-        }
+      display: none;
+    }
+  }
+  .introduction__image__desktop {
+    display: none;
+    @include breakpoint($large-screen-breakpoint) {
+      display: block;
+      width: 100%;
+    }
+  }
+  .introduction__buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    @include breakpoint($large-screen-breakpoint) {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      gap: 0.75rem;
+      transform: translateY(-2.2rem);
+    }
+  }
+  .introduction__onsite {
+    @include blueButton;
+  }
+  .introduction__online {
+    @include buttonLink;
+    @include breakpoint($large-screen-breakpoint) {
+      @include bigRedButtonDesktop;
+      order: -1;
+    }
+  }
+  .reviews {
+    padding: 1rem;
+    max-width: 20rem;
+    margin: 0 auto;
+
+    .review__second {
+      display: none;
+    }
+  }
+
+  .review__first,
+  .review__second {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-template-rows: auto auto;
+    gap: 0.5rem;
+    flex: 1;
+
+    .review__user {
+      grid-row: 1 / 1;
+    }
+
+    .review__content {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .review__text {
+      margin: 0;
+      font-size: 0.8rem;
+      font-style: italic;
+    }
+
+    .review__date {
+      margin: 0;
+      font-size: 0.6rem;
+      margin-top: 0.2rem;
+    }
+  }
+
+  @include breakpoint($large-screen-breakpoint) {
+    .reviews {
+      max-width: 1200px;
+      margin: 0 auto;
+
+      .review__second {
+        display: grid;
       }
-    
-      .reviews__container {
-        display: flex;
-        flex-wrap: wrap;
-        padding: 0rem 3rem;
-      }
-    }}    
+    }
+
+    .reviews__container {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 0rem 3rem;
+    }
+  }
+}

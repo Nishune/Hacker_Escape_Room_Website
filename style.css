@@ -2,64 +2,65 @@
 /*Screen size variables*/
 /*Project button mixins*/
 /*Project screen-size mixins*/
-header {
+.header {
   display: flex;
   flex-wrap: wrap;
   background-color: #011827;
   align-items: center;
 }
-header .header__container {
+.header .header__container {
   display: flex;
   align-items: center;
   padding: 1rem 1rem 1.3rem 1rem;
 }
 @media screen and (min-width: 1200px) {
-  header .header__container {
+  .header .header__container {
     align-items: flex-end;
   }
 }
-header .header__text {
+.header .header__text {
   font-size: 0.8rem;
   color: white;
   width: 3.5rem;
   margin: 0rem 0rem 0rem 0.5rem;
 }
 @media screen and (min-width: 1200px) {
-  header .header__text {
+  .header .header__text {
     width: auto;
     font-size: 1.4rem;
   }
 }
-header .navigation {
+.header .navigation {
   display: none;
   width: 100%;
 }
 @media screen and (min-width: 1200px) {
-  header .navigation {
+  .header .navigation {
     display: block;
+    width: 80%;
+    margin: auto;
+    margin-bottom: 0.3rem;
   }
 }
-header .navigation ul {
+.header .navigation ul {
   display: flex;
-  color: white;
   list-style-type: none;
   margin: 0;
   padding: 0;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
-  gap: 2.2rem;
 }
-header .navigation li {
+.header .navigation ul li {
   padding: 0.5rem;
 }
-header .navigation a {
+.header .navigation ul li a {
   text-decoration: none;
   color: white;
   font-weight: 700;
   font-size: 0.85rem;
 }
-header .navigation a:hover {
-  color: #8ACFE5;
+.header .navigation ul li a a:hover {
+  color: #8acfe5;
 }
 
 .introduction .introduction__image__mobile {
@@ -96,7 +97,7 @@ header .navigation a:hover {
   }
 }
 .introduction .introduction__onsite {
-  background-color: #8ACFE5;
+  background-color: #8acfe5;
   padding: 0.7rem 2.15rem;
   font-size: 0.8rem;
   font-weight: 700;
@@ -109,14 +110,14 @@ header .navigation a:hover {
   background-color: white;
   border: none;
   padding: 1rem;
-  color: #36769D;
+  color: #36769d;
   font-family: "Roboto", sans-serif;
   font-weight: 700;
   font-size: 0.6rem;
 }
 @media screen and (min-width: 1200px) {
   .introduction .introduction__online {
-    background-color: #E3170A;
+    background-color: #e3170a;
     color: white;
     padding: 0.7rem 2.32rem;
     font-size: 0.8rem;
@@ -259,7 +260,7 @@ header .navigation a:hover {
   padding: 0.5rem;
 }
 .content .room__button {
-  background-color: #E3170A;
+  background-color: #e3170a;
   font-size: 0.6rem;
   font-weight: 700;
   font-family: "Roboto", sans-serif;
@@ -285,7 +286,7 @@ header .navigation a:hover {
   }
 }
 .content .content__navigation__button {
-  background-color: #8ACFE5;
+  background-color: #8acfe5;
   padding: 0.7rem 2.15rem;
   font-size: 0.8rem;
   font-weight: 700;
@@ -298,14 +299,14 @@ header .navigation a:hover {
   background-color: white;
   border: none;
   padding: 1rem;
-  color: #36769D;
+  color: #36769d;
   font-family: "Roboto", sans-serif;
   font-weight: 700;
   font-size: 0.6rem;
 }
 @media screen and (min-width: 1200px) {
   .content .content__navigation__link {
-    background-color: #E3170A;
+    background-color: #e3170a;
     color: white;
     padding: 0.7rem 2.32rem;
     font-size: 0.8rem;
@@ -345,13 +346,13 @@ header .navigation a:hover {
 }
 .content .story__container .story__button {
   background-color: #011827;
-  border: 2px solid #8ACFE5;
+  border: 2px solid #8acfe5;
   padding: 0.7rem 2.22rem;
   font-size: 0.8rem;
   font-weight: 700;
   font-family: "Roboto", sans-serif;
   border-radius: 5px;
-  color: #8ACFE5;
+  color: #8acfe5;
 }
 
 @media screen and (min-width: 1200px) {
@@ -373,34 +374,40 @@ header .navigation a:hover {
     margin: auto;
   }
 }
-.play .play__firstImg, .play .play__secondImg {
+.play .play__firstImg,
+.play .play__secondImg {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
-.play .play__friends__firstHeading, .play .play__friends__secondHeading {
+.play .play__friends__firstHeading,
+.play .play__friends__secondHeading {
   font-size: 1.1rem;
   margin: 0 0 1rem 0;
 }
 @media screen and (min-width: 1200px) {
-  .play .play__friends__firstHeading, .play .play__friends__secondHeading {
+  .play .play__friends__firstHeading,
+  .play .play__friends__secondHeading {
     width: 14rem;
     margin-top: 1rem;
   }
 }
-.play .play__friends__firstText, .play .play__friends__secondText {
+.play .play__friends__firstText,
+.play .play__friends__secondText {
   font-size: 0.8rem;
   margin: 0 0 1rem 0;
 }
 @media screen and (min-width: 1200px) {
-  .play .play__friends__firstText, .play .play__friends__secondText {
+  .play .play__friends__firstText,
+  .play .play__friends__secondText {
     width: 14rem;
     margin-left: auto;
     margin-right: auto;
   }
 }
-.play .play__friends__book, .play .play__friends__challenges {
-  background-color: #E3170A;
+.play .play__friends__book,
+.play .play__friends__challenges {
+  background-color: #e3170a;
   font-size: 0.85rem;
   font-weight: 700;
   font-family: "Roboto", sans-serif;
