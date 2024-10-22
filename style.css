@@ -104,6 +104,7 @@
   font-family: "Roboto", sans-serif;
   border: none;
   border-radius: 5px;
+  color: black;
 }
 .introduction .introduction__online {
   text-decoration: underline;
@@ -293,6 +294,7 @@
   font-family: "Roboto", sans-serif;
   border: none;
   border-radius: 5px;
+  color: black;
 }
 .content .content__navigation__link {
   text-decoration: underline;

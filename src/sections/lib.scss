@@ -5,6 +5,7 @@ $gray: #b6bdb5;
 $blue: #36769d;
 $lighblue: #8acfe5;
 $white: white;
+$black: black;
 /*Screen size variables*/
 $large-screen-breakpoint: 1200px;
 
@@ -17,6 +18,7 @@ $large-screen-breakpoint: 1200px;
   font-family: "Roboto", sans-serif;
   border: none;
   border-radius: 5px;
+  color: $black;
 }
 @mixin buttonLink {
   text-decoration: underline;
