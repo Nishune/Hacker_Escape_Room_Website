@@ -184,7 +184,7 @@ header .navigation a:hover {
   display: flex;
   flex-direction: column;
 }
-.content h1 {
+.content .content__heading {
   font-size: 1.1rem;
   text-align: center;
   font-weight: 400;
