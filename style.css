@@ -50,16 +50,16 @@
   justify-content: space-evenly;
   align-items: center;
 }
-.header .navigation ul li {
+.header .navigation li {
   padding: 0.5rem;
 }
-.header .navigation ul li a {
+.header .navigation a {
   text-decoration: none;
   color: white;
   font-weight: 700;
   font-size: 0.85rem;
 }
-.header .navigation ul li a a:hover {
+.header .navigation a:hover {
   color: #8acfe5;
 }
 

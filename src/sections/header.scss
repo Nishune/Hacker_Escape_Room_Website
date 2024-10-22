@@ -41,21 +41,18 @@
       padding: 0;
       justify-content: space-evenly;
       align-items: center;
-
-      li {
-        padding: 0.5rem;
-
-        a {
-          text-decoration: none;
-          color: $white;
-          font-weight: 700;
-          font-size: 0.85rem;
-
-          a:hover {
-            color: $lighblue;
-          }
-        }
-      }
+    }
+    li {
+      padding: 0.5rem;
+    }
+    a {
+      text-decoration: none;
+      color: $white;
+      font-weight: 700;
+      font-size: 0.85rem;
+    }
+    a:hover {
+      color: $lighblue;
     }
   }
 }
