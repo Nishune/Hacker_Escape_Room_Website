@@ -46,6 +46,7 @@
   .play__friends__book,
   .play__friends__challenges {
     @include bigRedButton;
+    margin: 1rem 0rem 1.5rem 0rem;
   }
   .second__play__container {
     padding: 0.8rem;
