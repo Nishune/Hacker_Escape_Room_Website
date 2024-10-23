@@ -56,7 +56,7 @@
     padding: 0 0 0 0.6rem;
     gap: 0.3rem;
   }
-  .room_participants {
+  .room__participants {
     font-size: 0.5rem;
     margin: 0;
     padding: 0.2rem;
@@ -97,10 +97,10 @@
       margin: 1.4rem 0rem 0rem 0rem;
     }
   }
-  .content__navigation__button {
+  .content__navigation-button {
     @include blueButton;
   }
-  .content__navigation__link {
+  .content__navigation-link {
     @include buttonLink;
     @include breakpoint($large-screen-breakpoint) {
       @include bigRedButtonDesktop;
@@ -109,7 +109,7 @@
   }
   .content__story {
     background-color: $dark;
-  }
+  
   .story__container {
     display: flex;
     flex-direction: column;
@@ -118,6 +118,7 @@
     @include breakpoint($large-screen-breakpoint) {
       padding: 3.5rem 1rem 5rem 1rem;
     }
+  }
     .story__text {
       font-size: 1rem;
       color: $white;

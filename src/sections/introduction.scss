@@ -1,7 +1,6 @@
 @use "./lib.scss" as *;
 .introduction {
-
-  .introduction__image{
+  .introduction__image {
     width: 100%;
   }
   .introduction__image--mobile {
@@ -40,63 +39,65 @@
     }
   }
 
-.reviews {
-  padding: 1rem;
-  max-width: 20rem;
-  margin: 0 auto;
-
-  .review__second {
-    display: none;
-  }
-}
-
-.review__first,
-.review__second {
-  display: grid;
-  grid-template-columns: auto 1fr;
-  grid-template-rows: auto auto;
-  gap: 0.5rem;
-  flex: 1;
-
-  .review__user {
-    grid-row: 1 / 1;
-  }
-
-  .review__content {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .review__text {
-    margin: 0;
-    font-size: 0.8rem;
-    font-style: italic;
-  }
-
-  .review__date {
-    margin: 0;
-    font-size: 0.6rem;
-    margin-top: 0.2rem;
-    @include breakpoint($large-screen-breakpoint) {
-      width: 70%;
-    }
-  }
-}
-
-@include breakpoint($large-screen-breakpoint) {
   .reviews {
-    max-width: 1200px;
+    padding: 1rem;
+    max-width: 20rem;
     margin: 0 auto;
 
-    .review__second {
+    .reviews__container {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    .reviews__item {
       display: grid;
+      grid-template-columns: auto 1fr;
+      gap: 0.5rem;
+      flex: 1;
+
+      &--second {
+        display: none;
+
+        @include breakpoint($large-screen-breakpoint) {
+          display: grid;
+        }
+      }
+    }
+    .reviews__user {
+      grid-row: 1 / 1;
+    }
+
+    .reviews__content {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .reviews__text {
+      margin: 0;
+      font-size: 0.8rem;
+      font-style: italic;
+    }
+
+    .reviews__date {
+      margin: 0;
+      font-size: 0.6rem;
+      margin-top: 0.2rem;
+
+      @include breakpoint($large-screen-breakpoint) {
+        width: 70%;
+      }
+    }
+
+    @include breakpoint($large-screen-breakpoint) {
+      max-width: 1200px;
+      margin: 0 auto;
+
+      .reviews__container {
+        flex-direction: row;
+        justify-content: center;
+        padding: 0 3rem;
+      }
     }
   }
-
-  .reviews__container {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 0rem 3rem;
-  }
-}
 }

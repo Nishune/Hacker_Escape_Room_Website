@@ -9,6 +9,18 @@
       margin-bottom: 6.6rem;
     }
   }
+  .play__image--first {
+    @include breakpoint($large-screen-breakpoint) {
+      grid-column: 1 / 2;
+      grid-row: 1 / 2;
+    }
+  }
+  .play__image--second {
+    @include breakpoint($large-screen-breakpoint) {
+      grid-column: 2 / 3;
+      grid-row: 2 / 3;
+    }
+  }
   .play__content--first {
     padding: 0.8rem;
     @include breakpoint($large-screen-breakpoint) {
