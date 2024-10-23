@@ -14,7 +14,7 @@
     }
   }
 
-  .header__text {
+  .header__title {
     font-size: 0.8rem;
     color: $white;
     width: 3.5rem;
@@ -24,7 +24,7 @@
       font-size: 1.4rem;
     }
   }
-  .navigation {
+  .header__navigation {
     display: none;
     width: 100%;
 
@@ -34,7 +34,7 @@
       margin: auto;
       margin-bottom: 0.3rem;
     }
-    ul {
+    .header__menu {
       display: flex;
       list-style-type: none;
       margin: 0;
@@ -42,16 +42,16 @@
       justify-content: space-evenly;
       align-items: center;
     }
-    li {
+    .header__menu-item {
       padding: 0.5rem;
     }
-    a {
+    .header__menu-link {
       text-decoration: none;
       color: $white;
       font-weight: 700;
       font-size: 0.85rem;
     }
-    a:hover {
+    .header__menu-link:hover {
       color: $lighblue;
     }
   }

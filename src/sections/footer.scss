@@ -12,34 +12,34 @@
     padding: 3rem;
     height: 16.6rem;
   }
-  .company {
+  .footer__company {
     margin-top: 0.3rem;
     @include breakpoint($large-screen-breakpoint) {
       margin: 2.3rem 0rem 0rem 1rem;
     }
-    .company__heading {
+    .footer__heading--company {
       font-size: 0.6rem;
       font-weight: 700;
       margin: 0;
     }
-    .company__text {
+    .footer__text {
       font-size: 0.6rem;
       margin-top: 0.25rem;
       width: 14.5rem;
     }
   }
-  .contact {
+  .footer__contact {
     margin-top: 1.5rem;
     @include breakpoint($large-screen-breakpoint) {
       margin-top: 2.3rem;
     }
 
-    .contact__heading {
+    .footer__heading--contact {
       font-size: 0.6rem;
       font-weight: 700;
       margin: 0;
     }
-    .contact__list {
+    .footer__list--contact {
       list-style-type: none;
       padding: 0;
       margin-top: 0.25rem;
@@ -50,7 +50,7 @@
         display: block;
       }
     }
-    .contact__play {
+    .footer__list--play {
       list-style: none;
       padding: 0;
     }
@@ -61,17 +61,17 @@
       display: block;
     }
   }
-  .media {
+  .footer__media {
     margin-top: 1.5rem;
     @include breakpoint($large-screen-breakpoint) {
       margin-top: 2.3rem;
     }
-    .media__heading {
+    .footer__heading--media {
       font-size: 0.6rem;
       font-weight: 700;
       margin: 0;
     }
-    .media__list {
+    .footer__list--media {
       list-style-type: none;
       padding: 0;
       margin-top: 0.25rem;

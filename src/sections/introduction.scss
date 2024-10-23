@@ -1,16 +1,18 @@
 @use "./lib.scss" as *;
 .introduction {
-  .introduction__image__mobile {
+
+  .introduction__image{
     width: 100%;
+  }
+  .introduction__image--mobile {
     @include breakpoint($large-screen-breakpoint) {
       display: none;
     }
   }
-  .introduction__image__desktop {
+  .introduction__image--desktop {
     display: none;
     @include breakpoint($large-screen-breakpoint) {
       display: block;
-      width: 100%;
     }
   }
   .introduction__buttons {
@@ -27,73 +29,74 @@
       transform: translateY(-2.2rem);
     }
   }
-  .introduction__onsite {
+  .introduction__button--onsite {
     @include blueButton;
   }
-  .introduction__online {
+  .introduction__button--online {
     @include buttonLink;
     @include breakpoint($large-screen-breakpoint) {
       @include bigRedButtonDesktop;
       order: -1;
     }
   }
+
+.reviews {
+  padding: 1rem;
+  max-width: 20rem;
+  margin: 0 auto;
+
+  .review__second {
+    display: none;
+  }
+}
+
+.review__first,
+.review__second {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-template-rows: auto auto;
+  gap: 0.5rem;
+  flex: 1;
+
+  .review__user {
+    grid-row: 1 / 1;
+  }
+
+  .review__content {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .review__text {
+    margin: 0;
+    font-size: 0.8rem;
+    font-style: italic;
+  }
+
+  .review__date {
+    margin: 0;
+    font-size: 0.6rem;
+    margin-top: 0.2rem;
+    @include breakpoint($large-screen-breakpoint) {
+      width: 70%;
+    }
+  }
+}
+
+@include breakpoint($large-screen-breakpoint) {
   .reviews {
-    padding: 1rem;
-    max-width: 20rem;
+    max-width: 1200px;
     margin: 0 auto;
 
     .review__second {
-      display: none;
+      display: grid;
     }
   }
 
-  .review__first,
-  .review__second {
-    display: grid;
-    grid-template-columns: auto 1fr;
-    grid-template-rows: auto auto;
-    gap: 0.5rem;
-    flex: 1;
-
-    .review__user {
-      grid-row: 1 / 1;
-    }
-
-    .review__content {
-      display: flex;
-      flex-direction: column;
-    }
-
-    .review__text {
-      margin: 0;
-      font-size: 0.8rem;
-      font-style: italic;
-    }
-
-    .review__date {
-      margin: 0;
-      font-size: 0.6rem;
-      margin-top: 0.2rem;
-      @include breakpoint($large-screen-breakpoint) {
-        width: 70%;
-      }
-    }
+  .reviews__container {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0rem 3rem;
   }
-
-  @include breakpoint($large-screen-breakpoint) {
-    .reviews {
-      max-width: 1200px;
-      margin: 0 auto;
-
-      .review__second {
-        display: grid;
-      }
-    }
-
-    .reviews__container {
-      display: flex;
-      flex-wrap: wrap;
-      padding: 0rem 3rem;
-    }
-  }
+}
 }

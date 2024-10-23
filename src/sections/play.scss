@@ -9,7 +9,7 @@
       margin-bottom: 6.6rem;
     }
   }
-  .first__play__container {
+  .play__content--first {
     padding: 0.8rem;
     @include breakpoint($large-screen-breakpoint) {
       grid-column: 2 / 2;
@@ -18,14 +18,12 @@
       margin: auto;
     }
   }
-  .play__firstImg,
-  .play__secondImg {
+  .play__img {
     width: 100%;
     height: 100%;
     object-fit: cover;
   }
-  .play__friends__firstHeading,
-  .play__friends__secondHeading {
+  .play__heading {
     font-size: 1.1rem;
     margin: 0 0 1rem 0;
     @include breakpoint($large-screen-breakpoint) {
@@ -33,8 +31,7 @@
       margin-top: 1rem;
     }
   }
-  .play__friends__firstText,
-  .play__friends__secondText {
+  .play__text {
     font-size: 0.8rem;
     margin: 0 0 1rem 0;
     @include breakpoint($large-screen-breakpoint) {
@@ -43,12 +40,12 @@
       margin-right: auto;
     }
   }
-  .play__friends__book,
-  .play__friends__challenges {
+  .play__button--book,
+  .play__button--challenges {
     @include bigRedButton;
     margin: 1rem 0rem 1.5rem 0rem;
   }
-  .second__play__container {
+  .play__content--second {
     padding: 0.8rem;
     @include breakpoint($large-screen-breakpoint) {
       grid-column: 1 / 1;
