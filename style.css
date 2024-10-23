@@ -129,58 +129,59 @@
     order: -1;
   }
 }
-.introduction .reviews {
+
+.reviews {
   padding: 1rem;
   max-width: 20rem;
   margin: 0 auto;
 }
-.introduction .reviews .reviews__container {
+.reviews .reviews__container {
   display: flex;
   flex-direction: column;
   gap: 1rem;
 }
-.introduction .reviews .reviews__item {
+.reviews .reviews__item {
   display: grid;
   grid-template-columns: auto 1fr;
   gap: 0.5rem;
   flex: 1;
 }
-.introduction .reviews .reviews__item--second {
+.reviews .reviews__item--second {
   display: none;
 }
 @media screen and (min-width: 1280px) {
-  .introduction .reviews .reviews__item--second {
+  .reviews .reviews__item--second {
     display: grid;
   }
 }
-.introduction .reviews .reviews__user {
+.reviews .reviews__user {
   grid-row: 1/1;
 }
-.introduction .reviews .reviews__content {
+.reviews .reviews__content {
   display: flex;
   flex-direction: column;
 }
-.introduction .reviews .reviews__text {
+.reviews .reviews__text {
   margin: 0;
   font-size: 0.8rem;
   font-style: italic;
 }
-.introduction .reviews .reviews__date {
+.reviews .reviews__date {
   margin: 0;
   font-size: 0.6rem;
   margin-top: 0.2rem;
 }
 @media screen and (min-width: 1280px) {
-  .introduction .reviews .reviews__date {
+  .reviews .reviews__date {
     width: 70%;
   }
 }
 @media screen and (min-width: 1280px) {
-  .introduction .reviews {
+  .reviews {
     max-width: 1200px;
     margin: 0 auto;
   }
-  .introduction .reviews .reviews__container {
+  .reviews .reviews__container {
     flex-direction: row;
     justify-content: center;
     padding: 0 3rem;
