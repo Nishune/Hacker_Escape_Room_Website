@@ -14,8 +14,8 @@ $max-screen-breakpoint: 1500px;
 /*Project button mixins*/
 @mixin blueButton {
   background-color: $lighblue;
-  padding: 0.7rem 2.15rem;
-  font-size: 0.8rem;
+  padding: 0.66rem 1.93rem;
+  font-size: 0.85rem;
   font-weight: 700;
   font-family: "Roboto", sans-serif;
   border: none;
@@ -68,7 +68,7 @@ $max-screen-breakpoint: 1500px;
   background-color: $dark;
   border: 2px solid $lighblue;
   padding: 0.7rem 2.22rem;
-  font-size: 0.8rem;
+  font-size: 0.85rem;
   font-weight: 700;
   font-family: "Roboto", sans-serif;
   border-radius: 5px;

@@ -36,7 +36,7 @@
     object-fit: cover;
   }
   .play__heading {
-    font-size: 1.1rem;
+    font-size: 1.14rem;
     margin: 0 0 1rem 0;
     @include breakpoint($large-screen-breakpoint) {
       width: 14rem;
@@ -44,7 +44,7 @@
     }
   }
   .play__text {
-    font-size: 0.8rem;
+    font-size: 0.85rem;
     margin: 0 0 1rem 0;
     @include breakpoint($large-screen-breakpoint) {
       width: 14rem;
@@ -59,6 +59,7 @@
   }
   .play__content--second {
     padding: 0.8rem;
+    margin-bottom: 1.5rem;
     @include breakpoint($large-screen-breakpoint) {
       grid-column: 1 / 1;
       grid-row: 2 / 2;

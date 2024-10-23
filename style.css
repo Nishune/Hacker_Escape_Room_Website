@@ -11,7 +11,7 @@
 .header .header__container {
   display: flex;
   align-items: center;
-  padding: 1rem 1rem 1.3rem 1rem;
+  padding: 0.9rem 1rem 1.2rem 1rem;
 }
 @media screen and (min-width: 1280px) {
   .header .header__container {
@@ -19,7 +19,7 @@
   }
 }
 .header .header__title {
-  font-size: 0.8rem;
+  font-size: 0.85rem;
   color: white;
   width: 3.5rem;
   margin: 0rem 0rem 0rem 0.5rem;
@@ -83,7 +83,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 1rem;
+  padding: 1.1rem;
 }
 @media screen and (min-width: 1280px) {
   .introduction .introduction__buttons {
@@ -97,8 +97,8 @@
 }
 .introduction .introduction__button--onsite {
   background-color: #8acfe5;
-  padding: 0.7rem 2.15rem;
-  font-size: 0.8rem;
+  padding: 0.66rem 1.93rem;
+  font-size: 0.85rem;
   font-weight: 700;
   font-family: "Roboto", sans-serif;
   border: none;
@@ -163,12 +163,12 @@
 }
 .reviews .reviews__text {
   margin: 0;
-  font-size: 0.8rem;
+  font-size: 0.85rem;
   font-style: italic;
 }
 .reviews .reviews__date {
   margin: 0;
-  font-size: 0.6rem;
+  font-size: 0.64rem;
   margin-top: 0.2rem;
 }
 @media screen and (min-width: 1280px) {
@@ -196,7 +196,7 @@
   font-size: 1.1rem;
   text-align: center;
   font-weight: 400;
-  margin: 2rem 0rem 0.5rem 0rem;
+  margin: 2.6rem 0rem 0.5rem 0rem;
 }
 @media screen and (min-width: 1280px) {
   .content .content__heading {
@@ -250,7 +250,7 @@
   gap: 0.3rem;
 }
 .content .room__participants {
-  font-size: 0.5rem;
+  font-size: 0.57rem;
   margin: 0;
   padding: 0.2rem;
   text-align: center;
@@ -264,7 +264,7 @@
   }
 }
 .content .room__info {
-  font-size: 0.6rem;
+  font-size: 0.64rem;
   padding: 0.5rem 0.5rem 0 0.5rem;
   margin: 0;
 }
@@ -303,8 +303,8 @@
 }
 .content .content__navigation-button {
   background-color: #8acfe5;
-  padding: 0.7rem 2.15rem;
-  font-size: 0.8rem;
+  padding: 0.66rem 1.93rem;
+  font-size: 0.85rem;
   font-weight: 700;
   font-family: "Roboto", sans-serif;
   border: none;
@@ -342,11 +342,11 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 1.6rem 1rem 3rem 1rem;
+  padding: 1rem;
 }
 @media screen and (min-width: 1280px) {
   .content .content__story .story__container {
-    padding: 3.5rem 1rem 5rem 1rem;
+    padding: 3rem 5rem;
   }
 }
 .content .content__story .story__text {
@@ -354,7 +354,8 @@
   color: white;
   font-weight: 400;
   text-align: center;
-  padding: 0.8rem 0.5rem;
+  margin-top: 2.3rem;
+  width: 19rem;
 }
 @media screen and (min-width: 1280px) {
   .content .content__story .story__text {
@@ -366,11 +367,12 @@
   background-color: #011827;
   border: 2px solid #8acfe5;
   padding: 0.7rem 2.22rem;
-  font-size: 0.8rem;
+  font-size: 0.85rem;
   font-weight: 700;
   font-family: "Roboto", sans-serif;
   border-radius: 5px;
   color: #8acfe5;
+  margin: 0.8rem 0rem 2.2rem 0rem;
 }
 
 @media screen and (min-width: 1280px) {
@@ -410,7 +412,7 @@
   object-fit: cover;
 }
 .play .play__heading {
-  font-size: 1.1rem;
+  font-size: 1.14rem;
   margin: 0 0 1rem 0;
 }
 @media screen and (min-width: 1280px) {
@@ -420,7 +422,7 @@
   }
 }
 .play .play__text {
-  font-size: 0.8rem;
+  font-size: 0.85rem;
   margin: 0 0 1rem 0;
 }
 @media screen and (min-width: 1280px) {
@@ -445,6 +447,7 @@
 }
 .play .play__content--second {
   padding: 0.8rem;
+  margin-bottom: 1.5rem;
 }
 @media screen and (min-width: 1280px) {
   .play .play__content--second {
@@ -478,12 +481,12 @@
   }
 }
 .footer .footer__company .footer__heading--company {
-  font-size: 0.6rem;
+  font-size: 0.65rem;
   font-weight: 700;
   margin: 0;
 }
 .footer .footer__company .footer__text {
-  font-size: 0.6rem;
+  font-size: 0.65rem;
   margin-top: 0.25rem;
   width: 14.5rem;
 }
@@ -496,7 +499,7 @@
   }
 }
 .footer .footer__contact .footer__heading--contact {
-  font-size: 0.6rem;
+  font-size: 0.65rem;
   font-weight: 700;
   margin: 0;
 }
@@ -508,7 +511,7 @@
 .footer .footer__contact .footer__list--contact a {
   color: white;
   text-decoration: none;
-  font-size: 0.6rem;
+  font-size: 0.65rem;
   display: block;
 }
 .footer .footer__contact .footer__list--play {
@@ -518,7 +521,7 @@
 .footer .footer__contact a {
   color: white;
   text-decoration: none;
-  font-size: 0.6rem;
+  font-size: 0.65rem;
   display: block;
 }
 .footer .footer__media {
@@ -530,7 +533,7 @@
   }
 }
 .footer .footer__media .footer__heading--media {
-  font-size: 0.6rem;
+  font-size: 0.65rem;
   font-weight: 700;
   margin: 0;
 }
@@ -542,7 +545,7 @@
 .footer .footer__media .footer__list--media a {
   color: white;
   text-decoration: none;
-  font-size: 0.6rem;
+  font-size: 0.65rem;
   display: block;
 }
 
