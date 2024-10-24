@@ -92,12 +92,11 @@
     align-items: center;
     justify-content: center;
     gap: 0.65rem;
-    transform: translateY(-2.2rem);
+    transform: translateY(-2.3rem);
   }
 }
 .introduction .introduction__button--onsite {
   background-color: #8acfe5;
-  padding: 0.66rem 1.93rem;
   font-size: 0.85rem;
   font-weight: 700;
   font-family: "Roboto", sans-serif;
@@ -105,6 +104,11 @@
   border-radius: 5px;
   color: black;
   text-decoration: none;
+  width: 11rem;
+  height: 2.35rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .introduction .introduction__button--online {
   text-decoration: underline;
@@ -120,13 +124,17 @@
   .introduction .introduction__button--online {
     background-color: #e3170a;
     color: white;
-    padding: 0.7rem 2.32rem;
     font-size: 0.8rem;
     font-weight: 700;
     font-family: "Roboto", sans-serif;
     border: none;
     border-radius: 5px;
     text-decoration: none;
+    width: 11rem;
+    height: 2.35rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     order: -1;
   }
 }
@@ -313,7 +321,6 @@
 }
 .content .content__navigation-button {
   background-color: #8acfe5;
-  padding: 0.66rem 1.93rem;
   font-size: 0.85rem;
   font-weight: 700;
   font-family: "Roboto", sans-serif;
@@ -321,6 +328,11 @@
   border-radius: 5px;
   color: black;
   text-decoration: none;
+  width: 11rem;
+  height: 2.35rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .content .content__navigation-link {
   text-decoration: underline;
@@ -336,13 +348,17 @@
   .content .content__navigation-link {
     background-color: #e3170a;
     color: white;
-    padding: 0.7rem 2.32rem;
     font-size: 0.8rem;
     font-weight: 700;
     font-family: "Roboto", sans-serif;
     border: none;
     border-radius: 5px;
     text-decoration: none;
+    width: 11rem;
+    height: 2.35rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     order: -1;
   }
 }
@@ -453,8 +469,8 @@
   border: none;
   border-radius: 5px;
   color: white;
-  width: 11rem;
-  padding: 0.63rem;
+  width: 10.7rem;
+  padding: 0.65rem 0.65rem;
   margin: 1rem 0rem 1.45rem 0rem;
 }
 @media screen and (min-width: 1280px) {
