@@ -39,7 +39,7 @@
     font-size: 1.14rem;
     margin: 0 0 1rem 0;
     @include breakpoint($large-screen-breakpoint) {
-      width: 14rem;
+      width: 15rem;
       margin-top: 1rem;
     }
   }
@@ -47,7 +47,7 @@
     font-size: 0.85rem;
     margin: 0 0 1rem 0;
     @include breakpoint($large-screen-breakpoint) {
-      width: 14rem;
+      width: 15rem;
       margin-left: auto;
       margin-right: auto;
     }

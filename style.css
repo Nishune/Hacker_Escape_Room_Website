@@ -426,7 +426,7 @@
 }
 @media screen and (min-width: 1280px) {
   .play .play__heading {
-    width: 14rem;
+    width: 15rem;
     margin-top: 1rem;
   }
 }
@@ -436,7 +436,7 @@
 }
 @media screen and (min-width: 1280px) {
   .play .play__text {
-    width: 14rem;
+    width: 15rem;
     margin-left: auto;
     margin-right: auto;
   }
