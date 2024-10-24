@@ -27,7 +27,7 @@
 @media screen and (min-width: 1280px) {
   .header .header__title {
     width: auto;
-    font-size: 1.4rem;
+    font-size: 1.42rem;
   }
 }
 .header .header__navigation {
@@ -156,6 +156,14 @@
 }
 .reviews .reviews__user {
   grid-row: 1/1;
+  height: 2.57rem;
+  width: 2.61rem;
+}
+@media screen and (min-width: 1280px) {
+  .reviews .reviews__user {
+    width: 3.42rem;
+    height: 3.42rem;
+  }
 }
 .reviews .reviews__content {
   display: flex;
@@ -184,7 +192,7 @@
   .reviews .reviews__container {
     flex-direction: row;
     justify-content: center;
-    padding: 0 3rem;
+    padding: 0 1.5rem;
   }
 }
 
@@ -200,8 +208,8 @@
 }
 @media screen and (min-width: 1280px) {
   .content .content__heading {
-    font-size: 1.3rem;
-    margin: 2rem 0rem 3rem 0rem;
+    font-size: 1.28rem;
+    margin: 2.8rem 0rem 2rem 0rem;
   }
 }
 .content .content__rooms {

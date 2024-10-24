@@ -9,8 +9,8 @@
     font-weight: 400;
     margin: 2.6rem 0rem 0.5rem 0rem;
     @include breakpoint($large-screen-breakpoint) {
-      font-size: 1.3rem;
-      margin: 2rem 0rem 3rem 0rem;
+      font-size: 1.28rem;
+      margin: 2.8rem 0rem 2rem 0rem;
     }
   }
 
@@ -109,16 +109,16 @@
   }
   .content__story {
     background-color: $dark;
-  
-  .story__container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 1rem;
-    @include breakpoint($large-screen-breakpoint) {
-      padding: 3rem 5rem;
+
+    .story__container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 1rem;
+      @include breakpoint($large-screen-breakpoint) {
+        padding: 3rem 5rem;
+      }
     }
-  }
     .story__text {
       font-size: 1rem;
       color: $white;
