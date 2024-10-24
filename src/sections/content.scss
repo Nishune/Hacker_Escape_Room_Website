@@ -70,7 +70,7 @@
   }
   .room__info {
     font-size: 0.64rem;
-    padding: 0.5rem 0.5rem 0 0.5rem;
+    padding: 0.5rem 0.5rem 0 0.6rem;
     margin: 0;
   }
   .room__actions {
@@ -80,6 +80,7 @@
   }
   .room__button {
     @include redButton;
+    margin-top: 0.3rem;
   }
   .content__navigation {
     display: flex;
@@ -116,7 +117,7 @@
       align-items: center;
       padding: 1rem;
       @include breakpoint($large-screen-breakpoint) {
-        padding: 3rem 5rem;
+        padding: 4rem 1rem 3rem 1rem;
       }
     }
     .story__text {
@@ -128,12 +129,12 @@
       width: 19rem;
       @include breakpoint($large-screen-breakpoint) {
         width: 22rem;
-        margin: 0rem 0rem 0.5rem 0rem;
+        margin: 0.6rem 0rem 0.5rem 0rem;
       }
     }
     .story__button {
       @include darkButton;
-      margin: 0.8rem 0rem 2.2rem 0rem;
+      margin: 0.9rem 0rem 2.2rem 0rem;
     }
   }
 }

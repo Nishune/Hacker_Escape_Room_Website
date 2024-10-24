@@ -273,7 +273,7 @@
 }
 .content .room__info {
   font-size: 0.64rem;
-  padding: 0.5rem 0.5rem 0 0.5rem;
+  padding: 0.5rem 0.5rem 0 0.6rem;
   margin: 0;
 }
 .content .room__actions {
@@ -290,6 +290,7 @@
   border-radius: 5px;
   color: white;
   padding: 0.4rem 1.2rem;
+  margin-top: 0.3rem;
 }
 .content .content__navigation {
   display: flex;
@@ -354,7 +355,7 @@
 }
 @media screen and (min-width: 1280px) {
   .content .content__story .story__container {
-    padding: 3rem 5rem;
+    padding: 4rem 1rem 3rem 1rem;
   }
 }
 .content .content__story .story__text {
@@ -368,7 +369,7 @@
 @media screen and (min-width: 1280px) {
   .content .content__story .story__text {
     width: 22rem;
-    margin: 0rem 0rem 0.5rem 0rem;
+    margin: 0.6rem 0rem 0.5rem 0rem;
   }
 }
 .content .content__story .story__button {
@@ -380,7 +381,7 @@
   font-family: "Roboto", sans-serif;
   border-radius: 5px;
   color: #8acfe5;
-  margin: 0.8rem 0rem 2.2rem 0rem;
+  margin: 0.9rem 0rem 2.2rem 0rem;
 }
 
 @media screen and (min-width: 1280px) {
