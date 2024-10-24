@@ -104,6 +104,7 @@
   border: none;
   border-radius: 5px;
   color: black;
+  text-decoration: none;
 }
 .introduction .introduction__button--online {
   text-decoration: underline;
@@ -319,6 +320,7 @@
   border: none;
   border-radius: 5px;
   color: black;
+  text-decoration: none;
 }
 .content .content__navigation-link {
   text-decoration: underline;
@@ -375,12 +377,13 @@
 .content .content__story .story__button {
   background-color: #011827;
   border: 2px solid #8acfe5;
-  padding: 0.7rem 2.22rem;
+  padding: 0.6rem 2rem;
   font-size: 0.85rem;
   font-weight: 700;
   font-family: "Roboto", sans-serif;
   border-radius: 5px;
   color: #8acfe5;
+  text-decoration: none;
   margin: 0.9rem 0rem 2.2rem 0rem;
 }
 
