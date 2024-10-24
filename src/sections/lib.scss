@@ -3,7 +3,7 @@ $red: #e3170a;
 $dark: #011827;
 $gray: #b6bdb5;
 $blue: #36769d;
-$lighblue: #8acfe5;
+$lightblue: #8acfe5;
 $white: white;
 $black: black;
 /*Screen size variables*/
@@ -13,7 +13,7 @@ $max-screen-breakpoint: 1500px;
 
 /*Project button mixins*/
 @mixin blueButton {
-  background-color: $lighblue;
+  background-color: $lightblue;
   padding: 0.66rem 1.93rem;
   font-size: 0.85rem;
   font-weight: 700;
@@ -66,13 +66,13 @@ $max-screen-breakpoint: 1500px;
 }
 @mixin darkButton {
   background-color: $dark;
-  border: 2px solid $lighblue;
+  border: 2px solid $lightblue;
   padding: 0.7rem 2.22rem;
   font-size: 0.85rem;
   font-weight: 700;
   font-family: "Roboto", sans-serif;
   border-radius: 5px;
-  color: $lighblue;
+  color: $lightblue;
 }
 /*Project screen-size mixins*/
 @mixin breakpoint($min-size) {
