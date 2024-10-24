@@ -1,7 +1,6 @@
 @use "./lib.scss" as *;
 
 .introduction {
-  
   .introduction__image {
     width: 100%;
   }
@@ -66,7 +65,6 @@
       }
     }
   }
-
   .reviews__user {
     grid-row: 1 / 1;
     height: 2.57rem;

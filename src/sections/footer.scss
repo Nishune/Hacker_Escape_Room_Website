@@ -12,43 +12,36 @@
     padding: 3.1rem;
     height: 16.7rem;
   }
-
   .footer__company {
     margin-top: 0.3rem;
     @include breakpoint($large-screen-breakpoint) {
       margin: 2.2rem 0rem 0rem 1rem;
     }
-
     .footer__heading--company {
       font-size: 0.65rem;
       font-weight: 700;
       margin: 0;
     }
-
     .footer__text {
       font-size: 0.65rem;
       margin-top: 0.25rem;
       width: 17rem;
     }
   }
-
   .footer__contact {
     margin-top: 1.5rem;
     @include breakpoint($large-screen-breakpoint) {
       margin-top: 2.2rem;
     }
-
     .footer__heading--contact {
       font-size: 0.65rem;
       font-weight: 700;
       margin: 0;
     }
-
     .footer__menu--contact {
       list-style-type: none;
       padding: 0;
       margin-top: 0.25rem;
-
       .footer__menu-link {
         color: $white;
         text-decoration: none;
@@ -56,7 +49,6 @@
         display: block;
       }
     }
-
     .footer__menu--play {
       list-style: none;
       padding: 0;
@@ -69,19 +61,16 @@
       }
     }
   }
-
   .footer__media {
     margin-top: 1.5rem;
     @include breakpoint($large-screen-breakpoint) {
       margin-top: 2.2rem;
     }
-
     .footer__heading--media {
       font-size: 0.65rem;
       font-weight: 700;
       margin: 0;
     }
-
     .footer__menu--media {
       list-style-type: none;
       margin-top: 0.25rem;

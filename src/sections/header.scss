@@ -5,6 +5,7 @@
   flex-wrap: wrap;
   background-color: $dark;
   align-items: center;
+
   .header__container {
     display: flex;
     align-items: center;
@@ -13,7 +14,6 @@
       align-items: flex-end;
     }
   }
-
   .header__title {
     font-size: 0.85rem;
     color: $white;
