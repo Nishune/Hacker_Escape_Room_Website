@@ -478,15 +478,11 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 1rem 0rem 1.45rem 0rem;
+  margin: 2rem 0rem 1.45rem 0rem;
 }
 @media screen and (min-width: 1280px) {
+  .play .play__button--book,
   .play .play__button--challenges {
-    margin: 0rem 0rem 1.45rem 0rem;
-  }
-}
-@media screen and (min-width: 1280px) {
-  .play .play__button--book {
     margin: 0rem 0rem 1.45rem 0rem;
   }
 }

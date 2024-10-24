@@ -55,14 +55,10 @@
   .play__button--book,
   .play__button--challenges {
     @include bigRedButton;
-    margin: 1rem 0rem 1.45rem 0rem;
+    margin: 2rem 0rem 1.45rem 0rem;
   }
+  .play__button--book,
   .play__button--challenges {
-    @include breakpoint($large-screen-breakpoint) {
-      margin: 0rem 0rem 1.45rem 0rem;
-    }
-  }
-  .play__button--book {
     @include breakpoint($large-screen-breakpoint) {
       margin: 0rem 0rem 1.45rem 0rem;
     }
