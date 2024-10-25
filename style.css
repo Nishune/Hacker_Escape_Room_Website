@@ -124,7 +124,7 @@
   .introduction .introduction__button--online {
     background-color: #e3170a;
     color: white;
-    font-size: 0.8rem;
+    font-size: 0.85rem;
     font-weight: 700;
     font-family: "Roboto", sans-serif;
     border: none;
@@ -348,7 +348,7 @@
   .content .content__navigation-link {
     background-color: #e3170a;
     color: white;
-    font-size: 0.8rem;
+    font-size: 0.85rem;
     font-weight: 700;
     font-family: "Roboto", sans-serif;
     border: none;
