@@ -56,6 +56,9 @@
   .play__button--challenges {
     @include bigRedButton;
     margin: 2rem 0rem 1.45rem 0rem;
+    &:hover{
+      cursor: pointer;
+    }
   }
   .play__button--book,
   .play__button--challenges {

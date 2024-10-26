@@ -5,6 +5,8 @@
     width: 100%;
   }
   .introduction__image--mobile {
+    max-height: 468px;
+    object-fit: cover;
     @include breakpoint($large-screen-breakpoint) {
       display: none;
     }

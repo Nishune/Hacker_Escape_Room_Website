@@ -81,6 +81,9 @@
   .room__button {
     @include redButton;
     margin-top: 0.3rem;
+    &:hover{
+      cursor:pointer;
+    }
   }
   .content__navigation {
     display: flex;

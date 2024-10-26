@@ -66,6 +66,10 @@
 .introduction .introduction__image {
   width: 100%;
 }
+.introduction .introduction__image--mobile {
+  max-height: 468px;
+  object-fit: cover;
+}
 @media screen and (min-width: 1280px) {
   .introduction .introduction__image--mobile {
     display: none;
@@ -301,6 +305,9 @@
   padding: 0.42rem 1.15rem;
   margin-top: 0.3rem;
 }
+.content .room__button:hover {
+  cursor: pointer;
+}
 .content .content__navigation {
   display: flex;
   flex-direction: column;
@@ -479,6 +486,10 @@
   justify-content: center;
   align-items: center;
   margin: 2rem 0rem 1.45rem 0rem;
+}
+.play .play__button--book:hover,
+.play .play__button--challenges:hover {
+  cursor: pointer;
 }
 @media screen and (min-width: 1280px) {
   .play .play__button--book,
