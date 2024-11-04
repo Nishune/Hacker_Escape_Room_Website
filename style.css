@@ -77,6 +77,8 @@
   justify-content: center;
   align-items: center;
   z-index: 1000;
+  opacity: 0;
+  animation: fadeIn 0.1s ease-in forwards;
 }
 .header .header__navigation.overlay .header__navigation-close {
   position: absolute;
@@ -117,6 +119,14 @@
 }
 .header .header__navigation .header__menu-link:hover {
   color: #8acfe5;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 .introduction .introduction__image {

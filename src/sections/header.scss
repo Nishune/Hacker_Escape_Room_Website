@@ -67,6 +67,8 @@
       justify-content: center;
       align-items: center;
       z-index: 1000;
+      opacity: 0;
+      animation: fadeIn 0.1s ease-in forwards;
       
       
       .header__navigation-close {
@@ -75,7 +77,6 @@
         right: 1rem;
       }
     }
-    
     .header__menu {
       list-style-type: none;
       margin: 0;
@@ -104,6 +105,14 @@
     }
     .header__menu-link:hover {
       color: $lightblue;
+    }
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
     }
   }
 }
