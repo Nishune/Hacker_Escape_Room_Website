@@ -9,6 +9,7 @@ $black: black;
 /*Screen size variables*/
 $large-screen-breakpoint: 1280px;
 $max-screen-breakpoint: 1500px;
+$small-screen-breakpoint: 1279px;
 
 /*Project button mixins*/
 @mixin blueButton {
@@ -93,6 +94,11 @@ $max-screen-breakpoint: 1500px;
 /*Project screen-size mixins*/
 @mixin breakpoint($min-size) {
   @media screen and (min-width: $min-size) {
+    @content;
+  }
+}
+@mixin max-breakpoint($max-size) {
+  @media screen and (max-width: $max-size) {
     @content;
   }
 }
