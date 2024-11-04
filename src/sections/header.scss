@@ -5,6 +5,7 @@
   flex-wrap: wrap;
   background-color: $dark;
   align-items: center;
+  position: relative;
 
   .header__container {
     display: flex;
@@ -24,6 +25,23 @@
       font-size: 1.42rem;
     }
   }
+  .header__menu-button{
+    background: none;
+    border: none;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    @include breakpoint($large-screen-breakpoint){
+      display: none;
+    }
+  }
+  .header__navigation-close {
+    background: none;
+    border: none;
+    @include breakpoint($large-screen-breakpoint){
+      display: none;
+    }
+  }
   .header__navigation {
     display: none;
     width: 100%;
@@ -33,6 +51,7 @@
       width: 80%;
       margin: auto;
       margin-bottom: 0.3rem;
+
     }
     .header__menu {
       display: flex;
