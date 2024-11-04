@@ -96,7 +96,13 @@
   }
 }
 .header .header__navigation .header__menu-item {
-  padding: 0.5rem;
+  padding: 1rem;
+  text-align: center;
+}
+@media screen and (min-width: 1280px) {
+  .header .header__navigation .header__menu-item {
+    padding: 0.5rem;
+  }
 }
 .header .header__navigation .header__menu-link {
   text-decoration: none;
