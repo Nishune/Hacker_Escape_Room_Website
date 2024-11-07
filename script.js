@@ -1,5 +1,4 @@
 //variables
-
 const menuButton = document.querySelector(".header__menu-button");
 const closeButton = document.querySelector(".header__navigation-close");
 const navigationMenu = document.querySelector(".header__navigation");
